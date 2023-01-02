@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ExperienceCard from "./ExperienceCard";
 
 const WorkExperience = () => {
   return (
@@ -12,10 +13,10 @@ const WorkExperience = () => {
         Experience
       </h3>
 
-      <div>
-        {/* Experience */}
-        {/* Experience */}
-        {/* Experience */}
+      <div className="max-w-7xl flex space-x-5 overflow-x-auto p-x-10 pt-20 snap-x snap-mandatory">
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
       </div>
     </motion.div>
   );
