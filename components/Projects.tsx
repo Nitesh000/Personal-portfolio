@@ -6,15 +6,15 @@ const Projects = () => {
         Projects
       </h3>
 
-      <div className="relative max-w-7xl flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className="relative max-w-7xl flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40 scrollbar-thin">
         {projects.map((project, i) => (
-          <div className="max-w-7xl flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-3/5">
+          <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 md:p-44 md:pb-10 h-4/5 md:h-3/5">
             <img
               src="https://img.pikbest.com/png-images/start-up-project-vector-landing-page-vector-graphic-element_1402931.png!w700wp"
               alt="project image"
-              className="w-20 h-20 md:w-28 md:h-28 xl:w-32 xl:h-32"
+              className="w-32 aspect-auto md:w-40 xl:w-56"
             />
-            <div className="space-y-10 px-0 py-10 md:px-10 md:py-20 max-w-3xl">
+            <div className="space-y-10 px-0 py-0 md:px-10 md:py-10 max-w-xl">
               <h4 className="text-2xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   Project {i + 1} of {projects.length}:
