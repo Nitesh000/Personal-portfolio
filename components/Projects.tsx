@@ -8,7 +8,10 @@ const Projects = () => {
 
       <div className="relative max-w-7xl flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40 scrollbar-thin">
         {projects.map((project, i) => (
-          <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 md:p-44 md:pb-10 h-4/5 md:h-3/5">
+          <div
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 md:p-44 md:pb-10 h-4/5 md:h-3/5"
+            key={i}
+          >
             <img
               src="https://img.pikbest.com/png-images/start-up-project-vector-landing-page-vector-graphic-element_1402931.png!w700wp"
               alt="project image"

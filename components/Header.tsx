@@ -54,17 +54,15 @@ const Header = ({}: Props) => {
         transition={{ duration: 1.5 }}
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
-        <Link href="#contact">
-          <SocialIcon
-            className="cursor-pointer"
-            network="email"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-            Get In Touch
-          </p>
-        </Link>
+        <SocialIcon
+          className="cursor-pointer"
+          network="email"
+          fgColor="gray"
+          bgColor="transparent"
+        />
+        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          Get In Touch
+        </p>
       </motion.div>
     </header>
   );

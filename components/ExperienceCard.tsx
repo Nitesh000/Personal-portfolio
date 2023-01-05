@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const ExperienceCard = () => {
   return (
-    <article className="flex flex-col rounded-xl items-center space-y-7 flex-shrink-0 w-[400px] md:w-[450px] xl:w-[500px] snap-center bg-[#292929] p-10 hover:opacity-100 hover:shadow-2xl hover:shadow-slate-800 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <div className="flex flex-col rounded-xl items-center space-y-7 flex-shrink-0 w-[400px] md:w-[450px] xl:w-[500px] snap-center bg-[#292929] p-10 hover:opacity-100 hover:shadow-2xl hover:shadow-slate-800 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
         initial={{
           y: -100,
@@ -36,7 +36,7 @@ const ExperienceCard = () => {
           <li>Summary Points</li>
         </ul>
       </div>
-    </article>
+    </div>
   );
 };
 export default ExperienceCard;

@@ -17,36 +17,36 @@ const Home: NextPage = () => {
       <Header />
 
       {/* Hero */}
-      <section id="hero" className="snap-start">
+      <div id="hero" className="snap-start">
         <Hero />
-      </section>
+      </div>
 
       {/* About */}
-      <section id="about" className="snap-center">
+      <div id="about" className="snap-center">
         <About />
-      </section>
+      </div>
 
       {/* Experience */}
-      <section id="experience" className="snap-center">
+      <div id="experience" className="snap-center">
         <WorkExperience />
-      </section>
+      </div>
 
       {/* Skills*/}
-      <section id="skills" className="snap-start">
+      <div id="skills" className="snap-start">
         <Skills />
-      </section>
+      </div>
 
-      {/* TODO: projects */}
-      <section id="projects" className="snap-start">
+      {/* projects */}
+      <div id="projects" className="snap-start">
         <Projects />
-      </section>
+      </div>
 
       {/* Contact me */}
-      <section id="contact" className="snap-start">
+      <div id="contact" className="snap-start">
         <ContactMe />
-      </section>
+      </div>
 
-      <footer className="sticky bottom-5 w-full cursor-pointer">
+      <div className="sticky bottom-5 w-full cursor-pointer">
         <div className="flex items-center justify-center">
           <Link href="#hero">
             <Image
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
             />
           </Link>
         </div>
-      </footer>
+      </div>
     </div>
   );
 };
