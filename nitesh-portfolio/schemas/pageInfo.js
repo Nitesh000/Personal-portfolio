@@ -18,6 +18,7 @@ export default defineType({
     defineField({
       name: 'heroImage',
       title: 'Image',
+      type: 'image',
       options: {
         hotspot: true,
       },
@@ -53,6 +54,7 @@ export default defineType({
     defineField({
       name: 'socials',
       title: 'Socials',
+      type: 'array',
       of: [{type: 'reference', to: {type: 'social'}}],
     }),
   ],
