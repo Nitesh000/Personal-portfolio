@@ -1,4 +1,6 @@
+import my_image from "../public/my_image.png";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const About = () => {
   return (
