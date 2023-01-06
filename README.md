@@ -14,4 +14,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Description
 
-This is just a personal portfolio which i am working on mainly while watching 'sonny sangha' and with it i am try to lean the sanity.io and many more things.
+This is just a personal portfolio which i am working on mainly while watching `sonny sangha` and with it i am try to lean the sanity.io and many more things.

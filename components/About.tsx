@@ -1,8 +1,10 @@
-import my_image from "../public/my_image.png";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { PageInfo } from "../typings";
 
-const About = () => {
+type Props = {
+  pageInfo: PageInfo;
+};
+const About = ({ pageInfo }: Props) => {
   return (
     <div className="flex h-screen flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -30,8 +32,7 @@ const About = () => {
           </h4>
         </div>
         <p className="pt-16 text-base">
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-          cillum sint consectetur cupidatat.
+          {pageInfo?.backgroundInformation}
         </p>
       </motion.div>
     </div>
