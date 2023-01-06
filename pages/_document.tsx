@@ -5,6 +5,7 @@ export default function Document() {
     <Html>
       <Head>
         <title>Nitesh's Portfolio</title>
+        <meta property="og:name" content="Nitesh Tudu's Portfolio" key="name" />
       </Head>
       <body>
         <Main />
