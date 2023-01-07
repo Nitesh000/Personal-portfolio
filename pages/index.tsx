@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import { GetServerSideProps, GetStaticProps } from "next";
 import Link from "next/link";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
@@ -75,7 +75,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
 };
 export default Home;
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
   const skills: Skill[] = await fetchSkills();
@@ -90,9 +90,5 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       projects,
       socials,
     },
-    // Next js will apttempt to re-generate the page
-    // 2. so we can use the revalidate key to check for the time intreval it will do the revalidate.
-    //
-    revalidate: 10,
   };
 };
